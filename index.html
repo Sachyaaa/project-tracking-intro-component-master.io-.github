@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+
+</head>
+
+<body>
+
+  <nav>
+    <img src="images/logo.svg">
+    <ul class="nav-desk">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">pricing</a></li>
+      <li id="dot"></li>
+      <li><a href="#" id="login">login</a></li>
+    </ul>
+    <img class="ham" src="images/icon-hamburger.svg" alt="">
+    <img class="close" src="images/icon-close.svg" alt="">
+  </nav>
+  <div class="nav-mo">
+    <ul>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">pricing</a></li>
+      <hr>
+      <li><a href="#" id="login">login</a></li>
+    </ul>
+  </div>
+  <main>
+
+    <div class="left">
+      <p><span class="new">New</span>
+        <span class="dash">Monograph Dashboard</span>
+      </p>
+
+      <h1>Powerful insights <br> into your team</h1>
+      <p class="p">Project planning and time tracking for agile teams</p>
+
+      <button class="red-btn">Schedule a demo</button>
+      <button class="transperent-btn">to see a live preview</button>
+    </div>
+   
+
+    <div class="right">
+      <img src="images/illustration-devices.svg" alt="">
+    </div>
+  </main>
+
+  <div class="box"></div>
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+
+  <script>
+    let ham = document.querySelector('.ham');
+    let close = document.querySelector('.close');
+    let nav = document.querySelector('.nav-mo');
+
+    ham.addEventListener('click',e=>{
+      ham.style.display = 'none';
+      close.style.display = 'block';
+      nav.style.display = 'block';
+    })
+
+    close.addEventListener('click',e=>{
+      ham.style.display = 'block';
+      close.style.display = 'none';
+      nav.style.display = 'none';
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 100px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+nav ul li{
+    list-style: none;
+    
+}
+#dot{
+    list-style: disc;
+    margin-left: 20px;
+}
+#login, #dot{
+    color: hsl(231, 7%, 65%);
+    font-weight: 700;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* letter-spacing: -1px; */
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.right img{
+    width: 60vw;
+    transform: translateX(-10%);
+}
+.left{
+    margin-left: 100px;
+}
+.left h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    width: 50vw;
+    font-size: 62px;
+    text-transform: uppercase;
+    color: hsl(230, 29%, 20%);
+    /* width: 50vw; */
+}
+.new{
+    width: auto;
+    background-color: hsl(230, 29%, 20%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-family: 'Barlow condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.dash{
+    margin-left: 10px;
+    font-family: 'Barlow condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: hsl(230, 11%, 40%);
+}
+.p{
+    color: hsl(230, 29%, 20%);
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    width: 270px;
+    margin: 30px 0;
+    margin-bottom: 60px;
+}
+
+.red-btn{
+    width: 160px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Barlow condensed', sans-serif;
+    padding: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 0 2px rgb(129, 122, 122);
+    background-color: hsl(0, 100%, 68%);
+}
+.red-btn:hover{
+    opacity: 0.7;
+}
+
+.transperent-btn{
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: hsl(231, 7%, 65%);
+    margin-left: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    opacity: 0.7;
+    word-spacing: 5px;
+    
+}
+.box{
+    width: 50vw;
+    height: 55vh;
+    background-color:hsl(207, 33%, 95%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0px 0px 0px 50px;
+}
+.ham{
+    display: none;
+}
+.close{
+    display: none;
+}
+.nav-mo{
+    width: 100%;
+    display: none;
+    margin: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(92, 85, 85, 0.562);
+    text-align: center;
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 1;
+}
+.nav-mo ul {
+    display: flex;
+    flex-direction: column;
+}
+.nav-mo ul li{
+    list-style: none;
+    margin: 15px auto;
+}
+.nav-mo ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: hsl(230, 29%, 20%);
+    font-weight: 700;
+    font-family: 'Barlow condensed', sans-serif;
+    text-transform: uppercase;
+}
+.nav-mo hr{
+    margin: 10px;
+}
+.nav-mo ul li:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:860px){
+    body{
+        height: auto;
+        overflow-y: auto;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    nav{
+        margin: 30px;
+    }
+    .nav-desk li{
+        display: none;
+    }
+    .left{
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+    .left h1{
+        font-size: 42px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .left p{
+        width: 90%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .right img{
+        width: 130vw;
+        transform: translateX(10vw);
+        margin-top: 50px;
+    }
+    .red-btn{
+        width: 34%;
+    }
+    .ham{
+        display: block;
+        cursor: pointer;
+    }
+
+}
